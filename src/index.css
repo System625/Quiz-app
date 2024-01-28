@@ -1,0 +1,11 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+@import url(https://fonts.googleapis.com/css?family=Salsa:regular);
+
+* {
+    font-family: "salsa";
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
