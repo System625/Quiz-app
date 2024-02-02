@@ -13,3 +13,11 @@
 body {
     background: #001e4d;
 }
+
+.correct {
+    background-color: #9aeabc;
+}
+
+.incorrect {
+    background-color: #ff9393;
+}

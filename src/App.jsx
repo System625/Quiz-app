@@ -92,7 +92,7 @@ export default function App() {
           {choices.map((choice, index) => (
             <button
               key={index}
-              className={`bg-white text-[#222] font-medium w-full border border-[#222] p-[10px] my-[10px] mx-auto rounded-[4px] cursor-pointer transition-all duration-300 enabled:hover:bg-[#222] enabled:hover:text-white disabled:cursor-no-drop md:text-left  ${selectedAnswer === index ? (choice.answer ? "bg-[#9aeabc]" : "bg-[#ff9393]") : ""}`}
+              className={`bg-white text-[#222] font-medium w-full border border-[#222] p-[10px] my-[10px] mx-auto rounded-[4px] cursor-pointer transition-all duration-300 enabled:hover:bg-[#222] enabled:hover:text-white disabled:cursor-no-drop md:text-left  ${selectedAnswer === index ? (choice.answer ? "correct" : "incorrect") : ""}`}
               onClick={() => selectChoice(choice.answer, index)}
               aria-label={choice.text}
               disabled={selectedAnswer !== null}
